@@ -1,4 +1,5 @@
 import React from 'react'
+import Futa from './futa'
 
 const Contacts = () => {
   return (
@@ -21,6 +22,8 @@ const Contacts = () => {
         </div>
     </div>
 </section>
+
+<Futa/>
 
     </div>
   )

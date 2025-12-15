@@ -1,4 +1,5 @@
 import React from 'react'
+import './projects.css'
 
 const Projects = () => {
   return (
@@ -12,7 +13,7 @@ const Projects = () => {
 
         <div class="project1">
            <div class="pro1"><img src="./src/assets/img1.jpg" alt="" />
-           <div class="timeless"><h5><span>#</span> RENOVATION</h5>
+           <div class="timeless"><h5 className='h5'><span>#</span> RENOVATION</h5>
             <h1>Timeless Gray & White Living Room</h1> 
             <h4>September, 20, 2024</h4>
             <h5>More About Project <span>#</span></h5></div>
@@ -20,7 +21,7 @@ const Projects = () => {
         
         <div class="pro2">
             <img src="./src/assets/img2.jpg" alt="" />
-           <div class="gorgeous"> <h5><span>#</span> REMODELLING</h5>
+           <div class="gorgeous"> <h5 className='h5'><span>#</span> REMODELLING</h5>
             <h1>Gorgeous House Remodelling </h1> 
             <h4>September, 20, 2024</h4>
             <h5>More About Project <span>#</span></h5></div>
@@ -30,7 +31,7 @@ const Projects = () => {
         <div class="project2">
         <div class="pro3">
             <img src="./src/assets/img3.jpg" alt="" />
-            <div class="amber"><h5><span>#</span> REMODELLING</h5>
+            <div class="amber"><h5 className='h5'><span>#</span> REMODELLING</h5>
             <h1>Amber House Remodelling </h1> 
             <h4>September, 20, 2024</h4>
             <h5>More About Project <span>#</span></h5></div>
@@ -38,7 +39,7 @@ const Projects = () => {
 
         <div class="pro4">
             <img src="./src/assets/img4.jpg" alt="" />
-            <div class="modern"><h5><span>#</span>INTEROR DESIGN</h5>
+            <div class="modern"><h5 className='h5'><span>#</span>INTEROR DESIGN</h5>
             <h1>Modern White Bathroom</h1> 
             <h4>September, 20, 2024</h4>
             <h5>More About Project <span>#</span></h5></div>

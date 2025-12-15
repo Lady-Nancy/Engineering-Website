@@ -1,0 +1,309 @@
+/* --- Global / Static Grid Styles (From previous response) --- */
+
+body {
+    background: wheat;
+}
+
+.projects-section-container {
+    background: white;
+    margin-top: 7%;
+}
+
+.interiors-section {
+    background-color: white;
+}
+
+.commercial-section {
+    background: white;
+}
+
+.under {
+   background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/IMG-20251019-WA0107.jpg);
+   height: 50vh;
+   margin-bottom: 5%;
+}
+
+/* General structure and spacing */
+.project-page-container {
+  font-family: Arial, sans-serif;
+  /*max-width: 1200px;*/
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.project-section {
+  text-align: center;
+  margin-bottom: 80px;
+  padding-top: 50px;
+}
+
+/* Section Headings */
+.section-category-small {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #888;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.section-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Project Grid Layout */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.interior-grid {
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+/* Individual Project Card (Static) */
+.static-card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image-wrapper {
+  overflow: hidden;
+  margin-bottom: 10px;
+  aspect-ratio: 4 / 3; 
+}
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0 2px 0;
+  color: #333;
+}
+
+.project-subtitle {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+/* Separator styling */
+.section-separator {
+  height: 100px;
+  background-color: #f7f7f7;
+  position: relative;
+}
+
+.section-separator::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* --- Residential Carousel Styles (New addition) --- */
+
+.projects-section-container {
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+/* Carousel Header */
+.projects-header {
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.header-category-label {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: #666;
+    font-weight: 500;
+}
+
+.plus-sign {
+    color: red; /* Darker + sign */
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.header-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.header-subtitle {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Carousel Wrapper and Functionality */
+.projects-carousel-wrapper {
+    position: relative;
+    max-width: 100%; 
+    margin: 0 auto;
+}
+
+.projects-list {
+    display: flex;
+    overflow-x: scroll; /* Makes the list horizontally scrollable */
+    scroll-snap-type: x mandatory; /* Snap to project cards */
+    -webkit-overflow-scrolling: touch; /* Improved scrolling on iOS */
+    padding: 20px;
+    gap: 30px; /* Gap between cards */
+    margin: 0;
+    /* Hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+}
+
+.projects-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+/* Individual Carousel Card */
+.carousel-card {
+    min-width: 350px; /* Fixed width for each card */
+    scroll-snap-align: start;
+    flex-shrink: 0; /* Prevents cards from shrinking */
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Optional subtle shadow */
+}
+
+.card-image-wrapper {
+    width: 100%;
+    height: 250px; /* Fixed height for image */
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px 15px 25px;
+    text-align: left;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+
+.card-category {
+    font-size: 15px;
+    color: #555;
+    margin: 0;
+}
+
+/* Carousel Arrow Buttons */
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10;
+    color: #333;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-arrow:hover {
+    background: #fff;
+    border-color: #333;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  /* Static Grid Adjustments */
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .interior-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-title {
+    font-size: 32px;
+  }
+  
+  /* Carousel Adjustments */
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .left-arrow { left: 10px; }
+  .right-arrow { right: 10px; }
+}
+
+@media (max-width: 576px) {
+  /* Static Grid Adjustments */
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+  .interior-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-page-container {
+    padding: 20px 0; /* Adjust container padding for full-width carousel on mobile */
+  }
+  
+  /* Carousel Adjustments */
+  .carousel-arrow {
+    display: none; /* Hide arrows on very small screens, rely on touch scrolling */
+  }
+  .carousel-card {
+    min-width: 90%; /* Make card take up most of the screen width */
+  }
+  .projects-list {
+    padding: 10px;
+  }
+}

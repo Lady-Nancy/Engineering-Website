@@ -1,0 +1,222 @@
+/* --- Global Styles for Footer --- */
+.footer-container {
+    background-color: #242424; /* Dark background */
+    color: #ffffff; /* Light text color for contrast */
+    padding: 40px 0 0; /* Padding top, no bottom padding for the main content area */
+    font-family: Arial, sans-serif; /* Example font */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px; /* Max width to center the content */
+    margin: 0 auto;
+    padding: 0 20px 40px; /* Left/Right padding and bottom padding */
+    border-bottom: 1px solid #444; /* Separator line before the bottom bar */
+}
+
+/* --- Column Styling --- */
+.footer-column {
+    /* Flex-basis for column width, adjust as needed */
+    flex-basis: 25%; 
+    padding-right: 20px;
+}
+
+.footer-info {
+    flex-basis: 35%; /* Make the info column slightly wider */
+}
+
+/* --- Logo and Info Styles --- */
+.logo-container {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-img {
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    margin-bottom: 5px;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.logo-subtext {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ccc;
+    display: block;
+    margin-top: -5px; /* Adjust for closer spacing */
+}
+
+.company-description {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* --- Social Links Styles --- */
+.social-links {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    background-color: red; /* Orange background like the image */
+    color: #ffffff;
+    border-radius: 4px; /* Slight rounded corners */
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: red; /* Darker orange on hover */
+}
+
+/* --- Link Column Styles (About) --- */
+.column-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.column-title::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px; /* Orange line width */
+    height: 2px;
+    background-color: red; /* Orange color */
+}
+
+.link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.link-list li {
+    margin-bottom: 10px;
+}
+
+.link-list a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.link-list a:hover {
+    color: red; /* Orange hover effect */
+}
+
+
+/* --- Subscribe Column Styles --- */
+.footer-subscribe {
+    flex-basis: 35%; /* Matching the width of the info column */
+    padding-left: 20px;
+}
+
+.subscribe-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.email-input {
+    background-color: #333333; /* Slightly lighter dark background for the input */
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+    outline: none;
+}
+
+.email-input::placeholder {
+    color: #999;
+}
+
+.subscribe-button {
+    background-color: red; /* Orange button */
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.subscribe-button:hover {
+    background-color: red; /* Darker orange on hover */
+}
+
+/* --- Footer Bottom Bar --- */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+    font-size: 12px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --- Media Queries for Responsiveness (Optional but Recommended) --- */
+@media (max-width: 900px) {
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .footer-column {
+        flex-basis: 50%;
+        margin-bottom: 30px;
+        padding-right: 0;
+    }
+    
+    .footer-info, .footer-subscribe {
+        flex-basis: 100%;
+        padding-left: 0;
+    }
+    
+    .footer-subscribe {
+        order: -1; /* Move subscribe up on smaller screens */
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-column {
+        flex-basis: 100%;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+}

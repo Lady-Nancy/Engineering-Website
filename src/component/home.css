@@ -12,8 +12,8 @@
 } */
 
 .con {
-   height: 100vh;
-    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./assets/IMG-20251019-WA0107.jpg);
+   height: 145vh;
+    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/IMG-20251019-WA0107.jpg);
     background-size: cover;
     color: white;
     animation: fadeIn 2s ease-in-out;
@@ -28,7 +28,7 @@
     margin-right: 20px;
     margin-left: 20px;
     margin-top: 20px;
-    
+    text-decoration: none;
 }
 
 .link:hover {
@@ -39,8 +39,9 @@
    /* width: auto;
     height: 156vh; */
     color: white;
-    background-color: #111;
+   
     width: 100%;
+    position: absolute;
    
 }
 
@@ -53,14 +54,15 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid grey;
-    margin-left: 80px;
-    margin-right: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-top: 2%;
 }
 
 .home {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .home p:hover {
@@ -100,18 +102,18 @@
 
 .describe {
     text-align: center;
-   
-    margin-left: 300px;
-    font-size: 1em;
+    margin-left: 20%;
+    font-size: 1.8em;
     width: 60%;
+    padding-top: 15%;
 }
 
 .describe2 {
     text-align: center;
     background-color: red;
-    padding: 1px;
-    width: 15%;
-    font-weight: normal;
+    padding: 20px;
+    width: 13%;
+    margin-top: 2%;
     margin-left: 46%;
 }
 
@@ -122,6 +124,15 @@
     cursor: pointer;
 }
 
+.services-box {
+    color: white;
+    text-decoration: none;
+}
+
+.services-box:hover {
+    color: black;
+}
+
 .about-us {
     display: flex;
     height: 120vh;
@@ -130,19 +141,21 @@
 }
 
 .about-us2 {
-    margin-top: 80px;
-    margin-left: 80px;
+    margin-top: 13%;
+    margin-left: 10%;
 }
 
 .about-us h5 {
     color: gray;
+    margin-bottom: 2%;
 }
 
 .about-us h1 {
     font-weight: bold;
     font-size: 300%;
-    width: 88%;
+    width: 82%;
     color: black;
+    margin-bottom: 3%;
 }
 
 .about-us h4 {
@@ -163,7 +176,7 @@ h1 span {
 .about-us p {
     color: grey;
     font-size: 110%;
-    width: 70%;
+    width: 80%;
     margin-bottom: 6%;
 }
 
@@ -178,15 +191,24 @@ h1 span {
 }
 
 .more:hover{
-    background: white;
+    background: whitesmoke;
+    color: black;
+}
+
+.moree {
+    color: white;
+    text-decoration: none;
+}
+
+.moree:hover {
     color: black;
 }
 
 .about-us img {
     width: 60%;
     height: 50%;
-    margin-top: 260px;
-    margin-right: 200px;
+    margin-top: 15%;
+    margin-right: 20%;
 }
 
 .years {
@@ -247,6 +269,7 @@ h1 span {
 
 .five h1 {
     border-bottom: 1px solid grey;
+    padding-top: 30%;
 }
 
 .one {
@@ -256,7 +279,7 @@ h1 span {
 }
 
 .one img {
-    width: 50px;
+    width: 40px;
 }
 
 .one span {
@@ -271,32 +294,46 @@ h1 span {
 }
 
 .image img {
-    width: 292%;
+    width: 105vh;
     height: 135vh
 }
 
 .sector {
     margin-right: 5%;
-    margin-left: 36%;
+    margin-left: 3%;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .sector h5 {
-   margin-top: 130px;
+   margin-top: 22%;
    color: grey;
-   font-size: 1em;
+   margin-bottom: 3%;
+}
+
+.sector h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.sector .h {
+    color: rgb(86, 85, 85);
+    margin-bottom: 6%;
+    font-size: 1em;
 }
 
 .sector .ul1 {
     display: flex;
     justify-content: space-between;
     font-size: 1em;
+    margin-bottom: 3%;
 }
 
 .sector .ul2 {
     display: flex;
-    justify-content: space-between;
+    gap: 2em;
     font-size: 1em;
+    margin-bottom: 4%;
 }
 
 .ul1 span, .ul2 span {
@@ -305,14 +342,10 @@ h1 span {
     font-size: 20px;
 }
 
-.sector h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-
 .sector .h4 {
     color: grey;
-    font-size: 110%;
+    font-weight: lighter;
+    font-size: 1.1em;
     margin-bottom: 8%;
 }
 
@@ -322,21 +355,23 @@ h1 span {
 
 .re1 {
     background: red;
-    color: white;
-    padding: 15px; 
+    padding: 17px; 
     font-weight: bold;
-    width: 35%;
     text-align: center;
 }
 
 .re1:hover {
     background: black;
+}
+
+.rel-link {
+    text-decoration: none;
     color: white;
+    width: 30%;
 }
 
 .re2 {
     padding: 10px;
-    width: 30%;
     text-align: center;
     border: 2px solid black;
     margin-left: 15px;
@@ -353,6 +388,12 @@ h1 span {
     font-weight: lighter;
 }
 
+.rel2-link {
+    text-decoration: none;
+    color: black;
+    width: 30%;
+}
+
 .projects {
    height: 195vh; 
    color: white;
@@ -362,7 +403,6 @@ h1 span {
 
 .latest {
     text-align: center;
-    padding-top: 0.1%;
     font-weight: bold;
 }
 
@@ -371,12 +411,14 @@ h1 span {
 }
 
 .latest h5 {
-    font-size: 1.2em;
+    font-size: 1em;
+    margin-bottom: 3%;
 }
 
 .latest h1 {
     font-weight: bold;
-    font-size: 350%;
+    font-size: 325%;
+    margin-bottom: 3%;
 }
 
 .latest h4 {
@@ -406,10 +448,16 @@ h1 span {
 .pro1 h1 {
     font-size: 1.5em;
     color: rgb(43, 41, 41);
+    margin-top: 5%;
+    margin-bottom: 7%;
 }
 
-.pro1 h4, h5 {
-    margin-top: 13%;
+.pro1 .h5 {
+    margin-top: 20%;
+}
+
+.pro1 h4 {
+   margin-bottom: 12%;
 }
 
 .timeless {
@@ -435,6 +483,16 @@ h1 span {
 .pro2 h1 {
     font-size: 1.5em;
     color: rgb(43, 41, 41);
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.pro2 .h5 {
+    margin-top: 20%;
+}
+
+.pro2 h4 {
+    margin-bottom: 12%;
 }
 
 .gorgeous {
@@ -446,6 +504,7 @@ h1 span {
 .project2 {
     display: flex;
     margin-top: 50px;
+    margin-bottom: 6%;
 }
 
 .pro3 {
@@ -460,11 +519,21 @@ h1 span {
  .pro3 img {
     width: 47%;
     height: 45vh;
- }   
+ }  
+ 
+ .pro3 .h5 {
+    margin-top: 20%;
+ }
 
 .pro3 h1 {
     font-size: 1.5em;
     color: rgb(43, 41, 41);
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.pro3 h4 {
+   margin-bottom: 12%;
 }
 
 .amber {
@@ -488,9 +557,24 @@ h1 span {
     height: 45vh;
 }
 
+.pro4 .h5 {
+    margin-top: 20%;
+ }
+
+
 .pro4 h1 {
     font-size: 1.5em;
     color: rgb(43, 41, 41);
+    margin-top: 5%;
+    margin-bottom: 7%;
+}
+
+.pro4 h4 {
+   margin-bottom: 12%;
+}
+
+.pro4 h4 {
+   margin-bottom: 12%;
 }
 
 .modern {
@@ -501,13 +585,13 @@ h1 span {
 
 .all-pro {
     text-align: center;
+    text-decoration: none;
     background: white;
     color: black;
-    padding: 5px;
-    width: 15%;
+    padding: 20px;
+    width: 10%;
     margin-left: 45%;
     font-size: 1em;
-    margin-top: 60px;
     font-weight: bold;
 }
 
@@ -517,7 +601,7 @@ h1 span {
 }
 
 .stay {
-    height: 30vh;
+    height: 70vh;
     background: black;
     text-align: center;
 }
@@ -525,7 +609,8 @@ h1 span {
 .stay h5 {
     color: grey;
     font-weight: bold;
-    margin-top: 10%;
+    padding-top: 8%;
+    padding-bottom: 2%;
     text-align: center;
 }
 
@@ -535,11 +620,11 @@ h1 span {
     color: white;
     width: 800px;
     margin-left: 16%;
+    padding-bottom: 3%;
 }
 
 .stay h4 {
     background: red;
-    color: white;
     font-weight: bolder;
     padding: 20px;
     width: 15%;
@@ -551,12 +636,17 @@ h1 span {
     color: black;
 }
 
+.stay-link {
+    text-decoration: none;
+    color: white;
+}
+
 .gallery {
     background-color: rgb(246, 250, 248);
 }
 
 .gallery h5 {
-    padding-top: 100px;
+    padding-top: ;
     color: grey;
     font-weight: bold;
     margin-bottom: 0%;
@@ -626,17 +716,22 @@ h1 span {
     max-width: 100%;
     max-height: 100%;
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 35%;
     z-index: 0;
     opacity: 0;                  /* invisible at start */
     transition: opacity 1s ease; /* smooth fade-in */
 }
 
+
+.work-video video.show {
+    opacity: 1;
+}
+
 /* "+OUR VIDEO" text */
 .tex {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 1.5rem;
@@ -651,7 +746,7 @@ h1 span {
 /* "See Our Work in Action" text */
 .text {
     position: absolute;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 3rem;
@@ -666,7 +761,7 @@ h1 span {
 /* Play button */
 .play-btn {
     position: absolute;
-    top: 70%;
+    top: 60%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
@@ -723,9 +818,10 @@ h1 span {
 
 .contact-us {
     height: 200vh;
-    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./assects/one.jpg);
+    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/one.jpg);
     background-position: center;
     color: white;
+    background-size: cover;
     padding-top: 50px; 
 }
 
@@ -827,118 +923,493 @@ textarea {
 
 
 
+/* ===============================
+   MOBILE MENU DEFAULT (HIDDEN)
+================================ */
 
-/* Hide mobile menu on desktop */
+/* Hide mobile elements on desktop */
 .mobile-toggle,
 .mobile-menu {
-    display: none;
+  display: none;
 }
 
-.toggle-btn {
-    display: none; /* hidden on big screens */
-}
-
-
-
+/* ===============================
+   MOBILE STYLES
+================================ */
 @media (max-width: 768px) {
-    /* Hide desktop nav items */
-    .container1 .email,
-    .container1 .home {
-        display: none !important;
-    }
 
-    /* Show toggle button */
-    .mobile-toggle {
-        display: block;
-        position: fixed;
-        top: 15px;
-        right: 20px;
-        font-size: 40px;
-        color: white;
-        z-index: 2000;
-        cursor: pointer;
-    }
-
-    /* Mobile menu base */
-    .mobile-menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
+    .con {
         height: 100vh;
-        background: #111;
-
-        opacity: 0;
-        pointer-events: none;
-        transition: opacity 0.4s ease;
-        z-index: 1500;
     }
 
-    /* Menu active state */
-    .mobile-menu.active {
-        opacity: 1;
-        pointer-events: auto;
+    .describe {
+        font-size: 1em;
+        margin-left: 2%;
+        width: 90%;
+        padding-top: 35%;
+        padding-bottom: 5%;
     }
 
-    /* Close button */
-    .mobile-close {
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 40px;
-        cursor: pointer;
-        color: white;
+    .describe2 {
+        width: 40%;
+        margin-left: 32%;
     }
+  
+  
+     /* =============================
+     ABOUT SECTION
+  ============================== */
+  .about-us {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 20px;
+  }
 
-    /* Menu links */
-    .mobile-links {
-        list-style: none;
-        text-align: center;
-        font-size: 30px;
-        line-height: 50px;
-        margin-bottom: 30px;
-        padding: 0;
-    }
+  .about-us2 {
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
 
-    .mobile-links li {
-        margin: 15px 0;
-    }
+  .about-us h1 {
+    font-size: 200%;
+    width: 100%;
+  }
 
-    .mobile-links li a {
-        text-decoration: none;
-        color: white;
-        transition: color 0.3s;
-    }
+  .about-us h4,
+  .about-us p {
+    width: 100%;
+    font-size: 100%;
+  }
 
-    .mobile-links li a:hover {
-        color: orange;
-    }
+  .about-us img {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 0 0;
+  }
 
-    /* Contact */
-    .mobile-contact {
-        text-align: center;
-        margin-bottom: 25px;
-        color: white;
-        font-size: 16px;
-    }
+  /* =============================
+     BUTTON
+  ============================== */
+  .more {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+  }
 
-    /* Social icons */
-    .mobile-socials a {
-        font-size: 30px;
-        margin: 0 10px;
-        color: orange;
-        transition: color 0.3s;
-    }
+  /* =============================
+     YEARS SECTION
+  ============================== */
+  .two {
+    flex-direction: column;
+  }
 
-    .mobile-socials a:hover {
-        color: white;
-    }
+  .three,
+  .six,
+  .five,
+  .one {
+    width: 100%;
+    padding: 40px 20px;
+  }
 
+  .five h1 {
+    padding-top: 0;
+  }
+
+  /* =============================
+     TEXT ADJUSTMENTS
+  ============================== */
+  .three h1,
+  .six h1,
+  .five h1,
+  .one span {
+    font-size: 24px;
+  }
+
+  .three p,
+  .six p {
+    font-size: 14px;
+  }
+
+  /* =============================
+     IMAGES
+  ============================== */
+  .three img,
+  .six img,
+  .one img {
+    width: 40px;
+  }
 
     
+
+  /* Hide desktop nav (your existing classes) */
+  .container1 .email,
+  .container1 .home {
+    display: none !important;
+  }
+
+
+  /* ===============================
+     TOGGLE BUTTON
+  ================================ */
+  .mobile-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+    z-index: 1500; /* LOWER than menu */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+
+  
+.mobile-toggle.hide {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.9);
+}
+
+  /* ===============================
+     MOBILE MENU (BASE)
+  ================================ */
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    inset: 0; /* replaces top/left/width/height */
+    background-color: #111;
+    z-index: 2000;
+    /* Hidden state */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+
+  /* ===============================
+     ACTIVE STATE (THIS IS THE KEY)
+  ================================ */
+  .mobile-menu.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  /* ===============================
+     CLOSE BUTTON
+  ================================ */
+  .mobile-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+  }
+
+  /* ===============================
+     LINKS
+  ================================ */
+  .mobile-links {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+  .mobile-links li {
+    margin: 15px 0;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .mobile-links li:hover {
+    color: red;
+  }
+
+  /* ===============================
+     CONTACT INFO
+  ================================ */
+  .mobile-contact {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+
+  /* ===============================
+     SOCIAL ICONS
+  ================================ */
+  .mobile-socials a {
+    font-size: 30px;
+    margin: 0 10px;
+    color: orange;
+    transition: color 0.3s ease;
+  }
+
+  .mobile-socials a:hover {
+    color: white;
+  }
+
+
+   .projects {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .latest h1 {
+    font-size: 220%;
+  }
+
+  .latest h4 {
+    font-size: 110%;
+  }
+
+  /* Stack project rows */
+  .project1,
+  .project2 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Project cards */
+  .pro1,
+  .pro2,
+  .pro3,
+  .pro4 {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin: 0;
+  }
+
+  .pro1 img,
+  .pro2 img,
+  .pro3 img,
+  .pro4 img {
+    width: 100%;
+    height: auto;
+  }
+
+  .timeless,
+  .gorgeous,
+  .amber,
+  .modern {
+    margin: 20px;
+  }
+
+  .pro1 .h5,
+  .pro2 .h5,
+  .pro3 .h5,
+  .pro4 .h5 {
+    margin-top: 0;
+  }
+
+  /* ===============================
+     ALL PROJECTS BUTTON
+  =============================== */
+  .all-pro {
+    width: 80%;
+    margin: 40px auto;
+    display: block;
+    font-size: 1em;
+  }
+
+  /*video section*/
+  .work-video {
+    height: 76vh;
+  }
+
+  .work-video video {
+    left: 0%;
+    top: 15%;
+  }
+
+  .tex {
+    font-size: 1.2rem;
+    top: 40%;
+  }
+
+  .text {
+    font-size: 1.7rem;
+    top: 46%;
+  }
+
+  /* ===============================
+     STAY SECTION
+  =============================== */
+  .stay {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .stay h1 {
+    width: 100%;
+    margin: 20px auto;
+    font-size: 2em;
+  }
+
+  .stay h4 {
+    width: 80%;
+    margin: 20px auto;
+    font-size: 1em;
+  }
+
+  /* ===============================
+     GALLERY SECTION
+  =============================== */
+  .gallery h1 {
+    font-size: 32px;
+  }
+
+  .gallery h4 {
+    font-size: 16px;
+  }
+
+  .pics {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+
+  /* ===============================
+     CONTACT SECTION
+  =============================== */
+  .contact-us {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .contact-us1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 40px;
+  }
+
+  /* ===============================
+     HEAD TEXT
+  =============================== */
+  .head h5 {
+    padding-top: 40px;
+    font-size: 1em;
+  }
+
+  .head h1 {
+    font-size: 1.6em;
+    padding: 0 10px;
+  }
+
+  .head h4 {
+    font-size: 1em;
+    padding: 0 10px 20px;
+  }
+
+  /* ===============================
+     FORM
+  =============================== */
+  .form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name,
+  .phone,
+  .Email,
+  textarea {
+    width: 100%;
+    padding: 15px;
+    font-size: 1em;
+  }
+
+  textarea {
+    min-width: 100%;
+    height: 150px;
+  }
+
+  /* ===============================
+     BUTTON
+  =============================== */
+  .button {
+    width: 100%;
+    font-size: 1em;
+  }
+
+
+   /* ===============================
+     MAIN IMAGE SECTION
+  =============================== */
+  .image {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  /* ===============================
+     TEXT SECTION
+  =============================== */
+  .sector {
+    margin: 0;
+    text-align: left;
+  }
+
+  .sector h5 {
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  .sector h1 {
+    font-size: 2em;
+  }
+
+  .sector .h {
+    font-size: 1em;
+  }
+
+  .sector .h4 {
+    font-size: 1em;
+  }
+
+  /* ===============================
+     LISTS
+  =============================== */
+  .sector .ul1,
+  .sector .ul2 {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1em;
+  }
+
+  /* ===============================
+     BUTTONS
+  =============================== */
+  .request {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .re1,
+  .re2 {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .rel-link,
+  .rel2-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
 }
 

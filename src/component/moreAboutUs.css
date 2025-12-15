@@ -1,0 +1,112 @@
+/* --- Global Section Styling --- */
+.about-us-section {
+    background-color: red; /* The main orange background color */
+    padding: 60px 20px;
+    font-family: Arial, sans-serif; /* Use a common sans-serif font */
+    color: white;
+}
+
+/* --- Header Styling --- */
+.about-us-header {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.main-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.description-text {
+    font-size: 1.1em;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* --- Cards Container Styling (using Flexbox) --- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between the two cards */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+/* --- Individual Card Styling --- */
+.value-card {
+    background-color: white;
+    color: #333; /* Dark text for readability on white background */
+    padding: 40px;
+    border-radius: 4px;
+    flex: 1; /* Makes the cards take up equal space */
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 15px 0 10px 0;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #666;
+    text-align: left;
+}
+
+/* --- Icon Styling --- */
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red; /* Orange border for the ring */
+    background-color: #fff; /* White background for the inner circle */
+}
+
+.icon-symbol {
+    font-size: 2.5em; /* Size of the icon/emoji placeholder */
+    color: red; /* Orange color for the icon */
+    line-height: 1; /* Ensures the icon is centered */
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column; /* Stack cards vertically on smaller screens */
+        gap: 20px;
+    }
+    
+    .value-card {
+        max-width: 100%;
+        padding: 30px 20px;
+    }
+
+    .main-title {
+        font-size: 2em;
+    }
+}

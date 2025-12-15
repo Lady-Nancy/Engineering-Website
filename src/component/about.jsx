@@ -1,4 +1,5 @@
 import React from 'react'
+import Futa from './futa'
 
 const About = () => {
   return (
@@ -42,7 +43,7 @@ const About = () => {
         </div>
 
        </div>
-
+        <Futa/>
     </div>
   )
 }

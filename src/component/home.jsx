@@ -1,10 +1,40 @@
 import React from 'react'
+import { useState,  useRef  } from "react";
 import { FaXTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa6";
 import Hero from './hero';
+import Futa from './futa'
+import { Link } from 'react-router-dom';
 
 import "./home.css"
 
 const home = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+
+  /* VIDEO STATES */
+  const videoRef = useRef(null);
+  const [played, setPlayed] = useState(false);
+  const [paused, setPaused] = useState(false);
+
+  const handlePlay = () => {
+    setPlayed(true);
+
+    setTimeout(() => {
+      videoRef.current.style.opacity = 1;
+      videoRef.current.play();
+    }, 300);
+  };
+
+  const handlePause = () => {
+    if (videoRef.current.paused) {
+      videoRef.current.play();
+      setPaused(false);
+    } else {
+      videoRef.current.pause();
+      setPaused(true);
+    }
+  };
+
+
   return (
     <div>
       <div className="container1">
@@ -31,45 +61,36 @@ const home = () => {
               <FaYoutube size={30} />
             </div>
     </div> */ }
-
-    {/* MOBILE TOGGLE BUTTON */}
-    <div className="mobile-toggle">☰</div>
-
-    <div className="mobile-menu">
-        <div className="mobile-close">✕</div>
+       {/* MOBILE MENU */}
+      <div className={`mobile-menu ${menuOpen ? "active" : ""}`}>
+        <div
+          className="mobile-close"
+          onClick={() => setMenuOpen(false)}
+        >
+          ✕
+        </div>
 
         <ul className="mobile-links">
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>Contacts</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Services</li>
+          <li>Projects</li>
+          <li>Contacts</li>
         </ul>
 
         <div className="mobile-contact">
-            <p>+(234) 816 079 1212</p>
-            <p>cplexconstructioncompanyltd@email.com</p>
+          <p>+(234) 816 079 1212</p>
+          <p>cplexconstructioncompanyltd@email.com</p>
         </div>
 
         <div className="mobile-socials">
-            <a href=""><ion-icon name="logo-twitter"></ion-icon></a>
-            <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-            <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
-            <a href=""><ion-icon name="logo-youtube"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
         </div>
-    </div>
 
-    <script>
-        {`
-        document.querySelector('.mobile-toggle').onclick = () => {
-            document.querySelector('.mobile-menu').classList.add('active');
-        };
-
-        document.querySelector('.mobile-close').onclick = () => {
-            document.querySelector('.mobile-menu').classList.remove('active');
-        };
-        `}
-    </script>
+      </div>
 
     {/*<div className="describe">
         <h1>Engineering, Construction, and Project Management</h1>
@@ -78,14 +99,19 @@ const home = () => {
         <h2>Our Services</h2>
     </div> */}
 </div>
+
 <Hero/>
+
 <div className="about-us">
     <div className="about-us2">
         <h5><span>+</span> ABOUT US</h5>
         <h1>We Are More Than <span>4 Years</span> on the Market</h1>
         <h4>We're proud of our reliability and reputation.</h4>
         <p>We are a leading construction company with 30+ years of experience in the industry We are dedicated to providing the highest quality construction services to our customers meeting their special needs on schedule and within their budgets. Client satisfaction is always our first priority.</p>
-        <div className="more">More About Us</div>
+       
+        <Link  to="/moreAboutUs" className='moree'>
+        <div className="more">
+           More About Us </div></Link>
     </div>
     <img src="./src/assets/0539e10035c641d08c11faf834874571.jpg" alt="" />
 </div>
@@ -123,7 +149,7 @@ const home = () => {
         <div className="sector">
             <h5><span>+</span> SECTORS</h5>
             <h1>Building, Renovation & Improvements</h1>
-            <h4>We are proud to be the leading company with more than 30 years of experience. We provide a wide range of high-quality services to the majority of industries while meeting high industry standards.</h4>
+            <h4 className='h'>We are proud to be the leading company with more than 30 years of experience. We provide a wide range of high-quality services to the majority of industries while meeting high industry standards.</h4>
 
             <div className="ul1">
                 <p><span>•</span>Commercial</p>
@@ -141,8 +167,8 @@ const home = () => {
             <h4 className="h4">We've started as a small family-owned construction company  in Alabama and now are one of the biggest and most reliable contractors throughout the USA. If you're looking for an experienced company to implement your project of any complexity, you can count on us.</h4>
 
             <div className="request">
-                <div className="re1">Request a Quote</div>
-                <div className="re2">Projects <span>+</span></div>
+                <Link to="/contacts" className='rel-link'><div className="re1"> Request a Quote</div></Link>
+                <Link to= "/project" className='rel2-link'><div className="re2">Projects <span>+</span></div></Link>
             </div>
         </div>
     </div>
@@ -152,14 +178,14 @@ const home = () => {
     <div className="latest">
         <h5><span>+</span> LATEST WORKS</h5>
         <h1>Projects We Are Proud Of</h1>
-        <h4>Check out our lastest projects...</h4>
+        <h4>Check out our lastest projects to see our style and expertize.</h4>
     </div>
 
     <div className="project1">
         <div className="pro1">
             <img src="./src/assets/img1.jpg" alt="" />
             <div className="timeless">
-                <h5><span>#</span> RENOVATION</h5>
+                <h5 className='h5'><span>#</span> RENOVATION</h5>
                 <h1>Timeless Gray & White Living Room</h1>
                 <h4>September, 20, 2024</h4>
                 <h5>More About Project <span>#</span></h5>
@@ -169,7 +195,7 @@ const home = () => {
         <div className="pro2">
             <img src="./src/assets/img2.jpg" alt="" />
             <div className="gorgeous">
-                <h5><span>#</span> REMODELLING</h5>
+                <h5 className='h5'><span>#</span> REMODELLING</h5>
                 <h1>Gorgeous House Remodelling</h1>
                 <h4>September, 20, 2024</h4>
                 <h5>More About Project <span>#</span></h5>
@@ -181,7 +207,7 @@ const home = () => {
         <div className="pro3">
             <img src="./src/assets/img3.jpg" alt="" />
             <div className="amber">
-                <h5><span>#</span> REMODELLING</h5>
+                <h5 className='h5'><span>#</span> REMODELLING</h5>
                 <h1>Amber House Remodelling</h1>
                 <h4>September, 20, 2024</h4>
                 <h5>More About Project <span>#</span></h5>
@@ -191,7 +217,7 @@ const home = () => {
         <div className="pro4">
             <img src="./src/assets/img4.jpg" alt="" />
             <div className="modern">
-                <h5><span>#</span>INTEROR DESIGN</h5>
+                <h5 className='h5'><span>#</span>INTEROR DESIGN</h5>
                 <h1>Modern White Bathroom</h1>
                 <h4>September, 20, 2024</h4>
                 <h5>More About Project <span>#</span></h5>
@@ -199,15 +225,16 @@ const home = () => {
         </div>
     </div>
 
-    <div className="all-pro">
-        <p>All Projects</p>
-    </div>
+   <Link to="/project" className="all-pro">
+  All Projects
+</Link>
+
 </section>
 
 <section className="stay">
     <h5><span>+</span> STAY IN TOUCH</h5>
     <h1>Contact Us To Specify Your Project Details Right Now</h1>
-    <h4>Request a Quote</h4>
+    <Link to= "/contacts" className='stay-link'><h4>Request a Quote</h4></Link>
 </section>
 
 <section className="gallery">
@@ -227,50 +254,36 @@ const home = () => {
     </div>
 </section>
 
-<section className="work-video">
-    <video id="bg-video" muted>
-        <source src="./src/assets/VID-20251019-WA0124.mp4" type="video/mp4" />
-    </video>
+  {/* ===== WORK VIDEO SECTION ===== */}
+      <div className="work-video">
+        <video
+          ref={videoRef}
+          src="./src/assets/VID-20251019-WA0124.mp4"
+          muted
+          loop
+        />
 
-    <h1 id="tex" className="tex"><span>+</span>OUR VIDEO</h1>
-    <h1 id="text" className="text">See Our Work in Action</h1>
+        <div className={`tex ${played ? "fade-out" : ""}`}> <span>+</span> OUR VIDEO</div>
 
-    <button id="play-btn" className="play-btn">▶</button>
-    <button id="pause-btn" className="pause-btn">⏸</button>
-</section>
+        <div className={`text ${played ? "fade-out" : ""}`}>
+          See Our Work in Action
+        </div>
+          {!played && (
+          <div className="play-btn" onClick={handlePlay}>
+            ▶
+          </div>
+        )}
 
-<script>
-{`
-const video = document.getElementById("bg-video");
-const tex = document.getElementById("tex");
-const text = document.getElementById("text");
-const playBtn = document.getElementById("play-btn");
-const pauseBtn = document.getElementById("pause-btn");
-
-playBtn.addEventListener("click", () => {
-    tex.classList.add("fade-out");
-    text.classList.add("fade-out");
-
-    setTimeout(() => {
-        video.style.opacity = 1;
-        video.play();
-        pauseBtn.style.display = "flex";
-    }, 300);
-
-    playBtn.style.display = "none";
-});
-
-pauseBtn.addEventListener("click", () => {
-    if(video.paused) {
-        video.play();
-        pauseBtn.textContent = "⏸";
-    } else {
-        video.pause();
-        pauseBtn.textContent = "▶";
-    }
-});
-`}
-</script>
+        {played && (
+          <div
+            className="pause-btn"
+            onClick={handlePause}
+            style={{ display: "flex" }}
+  >
+            {paused ? "▶" : "⏸"}
+          </div>
+        )}
+      </div>
 
 <section className="contact-us">
     <div className="contact-us1">
@@ -290,6 +303,8 @@ pauseBtn.addEventListener("click", () => {
         </div>
     </div>
 </section>
+
+    <Futa />
 
     </div>
   )
