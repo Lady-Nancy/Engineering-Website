@@ -905,6 +905,7 @@ textarea {
     border-bottom: none;
     display: absolute;
     background: black;
+    color: white;
     border-radius: 4px;
 }
 
