@@ -34,7 +34,7 @@ export default function Services() {
       text: "From meetings with architects and engineers to project completion, we meet all goals.",
     },
     {
-      img: "/imagess/s7.jpg",
+      img: "/images/s7.jpg",
       title: "Property Development",
       text: "We work with well-known funders, builders, and owners to optimize the whole life-cycle.",
     },
