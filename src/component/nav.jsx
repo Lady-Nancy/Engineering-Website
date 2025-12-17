@@ -80,7 +80,7 @@ const Nav = () => {
 
      <div className="okay">
       <div>
-        <img src="./src/assets/IMG-20251019-WA0023.jpg" alt="" />
+        <img src="/images/IMG-20251019-WA0023.jpg" alt="" />
         C - PLEX
       </div>
       <h6>Design And Construction</h6>
