@@ -1,6 +1,6 @@
 /* --- Global / Static Grid Styles (From previous response) --- */
 
-body {
+/*body {
     background: wheat;
 }
 
@@ -21,7 +21,7 @@ body {
    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/IMG-20251019-WA0107.jpg);
    height: 50vh;
    margin-bottom: 5%;
-}
+}*/
 
 /* General structure and spacing */
 .project-page-container {
