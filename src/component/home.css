@@ -646,7 +646,7 @@ h1 span {
 }
 
 .gallery h5 {
-    padding-top: ;
+    padding-top: 8%;
     color: grey;
     font-weight: bold;
     margin-bottom: 0%;
@@ -1006,10 +1006,14 @@ textarea {
 
   .three,
   .six,
-  .five,
+  .five {
+    width: 100%;
+    padding: 70px 20px;
+  }
+
   .one {
     width: 100%;
-    padding: 40px 20px;
+    padding: 60px 20px;
   }
 
   .five h1 {
@@ -1398,10 +1402,13 @@ textarea {
     gap: 15px;
   }
 
-  .re1,
-  .re2 {
+  .re1 {
     width: 100%;
     padding: 15px;
+  }
+
+  .re2 {
+    margin-left: 0%;
   }
 
   .rel-link,

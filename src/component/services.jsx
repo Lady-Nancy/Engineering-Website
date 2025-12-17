@@ -30,7 +30,7 @@ const handlePause = () => {
     <div>
         <div className="image">
         <div>
-            <img src="./src/assets/1.jpg" alt="" />
+            <img src="./src/assets/onee.jpg" alt="" />
         </div>
         <div className="sector">
             <h5><span>+</span> SECTORS</h5>

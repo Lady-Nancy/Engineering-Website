@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './futa.css';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'; // Assuming you use react-icons
+import { FaXTwitter, FaInstagram, FaFacebook, FaYoutube } from "react-icons/fa6"; // Assuming you use react-icons
 
 const Futa = () => {
   return (
@@ -24,22 +25,55 @@ const Futa = () => {
             We are dedicated to providing the highest quality construction services.
           </p>
           <div className="social-links">
-            <a href="#" className="social-icon facebook"><FaFacebookF /></a>
-            <a href="#" className="social-icon instagram"><FaInstagram /></a>
-            <a href="#" className="social-icon twitter"><FaTwitter /></a>
-            <a href="#" className="social-icon youtube"><FaYoutube /></a>
-          </div>
+               <a href="https://x.com/your_username" 
+                  className='social-icon'
+                  target="_blank" rel="noopener noreferrer">
+                     <FaXTwitter size={30} />
+                   </a>
+            
+            
+                 <a
+                   href="https://www.instagram.com/your_username"
+                   className='social-icon'
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <FaInstagram size={30} />
+                 </a>
+            
+                   <a
+                   href="https://www.instagram.com/c_plex_ltd?igsh=MTAzZjhsZmo5MjN1YQ=="
+                   className='social-icon'
+                   target="_blank"
+                   rel="noopener noreferrer">
+                   <FaFacebook size={30} />
+                   </a>
+                
+                   <a href="https://youtube.com/@your_channel"
+                    className='social-icon' 
+                    target="_blank" rel="noopener noreferrer">
+                    <FaYoutube size={30} />
+                   </a>
+                </div>
         </div>
 
         {/* Column 2: About Links */}
         <div className="footer-column footer-links">
           <h4 className="column-title">About</h4>
-          <ul className="link-list">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contacts</a></li>
-          </ul>
+         <ul className="link-list">
+  <li>
+    <Link to="/about" className="link">About Us</Link>
+  </li>
+  <li>
+    <Link to="/services" className="link">Services</Link>
+  </li>
+  <li>
+    <Link to="/projects" className="link">Projects</Link>
+  </li>
+  <li>
+    <Link to="/contacts" className="link">Contact Us</Link>
+  </li>
+</ul>
+
         </div>
         
         {/* Column 3: Subscription Form */}

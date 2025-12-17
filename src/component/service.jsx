@@ -47,7 +47,7 @@ export default function Services() {
 
   return (
     <div className="services-container">
-      <p className="section-tag">+ WHAT WE DO</p>
+      <p className="section-tag"><span>+</span> WHAT WE DO</p>
       <h2 className="section-title">High-Performance Services</h2>
       <p className="section-desc">
         We can do anything related to construction and renovation. See the list of our services below:
