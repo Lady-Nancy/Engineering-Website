@@ -6,22 +6,22 @@ import Futa from './futa'
 
 // Data for the Commercial projects section (used in the static grid)
 const commercialProjects = [
-  { id: 1, title: 'Anchor NYC office', subtitle: 'Renovation', imgSrc: './src/assets/commercial1.jpg' },
-  { id: 2, title: 'Lamb studio', subtitle: 'Interior Design', imgSrc: './src/assets/commercial2.jpg' },
-  { id: 3, title: 'Neal Studio', subtitle: 'Interior Design', imgSrc: './src/assets/commercial3.jpg' },
-  { id: 4, title: 'Preconstruction', subtitle: 'Construction', imgSrc: './src/assets/commercial4.jpg' },
-  { id: 5, title: 'SPRING Design Studio', subtitle: 'Design-Build', imgSrc: './src/assets/commercial5.jpg' },
-  { id: 6, title: 'Edward Cos Campus', subtitle: 'Construction', imgSrc: './src/assets/commercial6.jpg' },
-  { id: 7, title: 'Edward Cos Campus', subtitle: 'Construction', imgSrc: './src/assets/commercial7.jpg' },
-  { id: 8, title: 'Garage Center', subtitle: 'Construction', imgSrc: './src/assets/commercial8.jpg' },
+  { id: 1, title: 'Anchor NYC office', subtitle: 'Renovation', imgSrc: '/images/commercial1.jpg' },
+  { id: 2, title: 'Lamb studio', subtitle: 'Interior Design', imgSrc: '/images/commercial2.jpg' },
+  { id: 3, title: 'Neal Studio', subtitle: 'Interior Design', imgSrc: '/images/commercial3.jpg' },
+  { id: 4, title: 'Preconstruction', subtitle: 'Construction', imgSrc: '/images/commercial4.jpg' },
+  { id: 5, title: 'SPRING Design Studio', subtitle: 'Design-Build', imgSrc: '/images/commercial5.jpg' },
+  { id: 6, title: 'Edward Cos Campus', subtitle: 'Construction', imgSrc: '/images/commercial6.jpg' },
+  { id: 7, title: 'Edward Cos Campus', subtitle: 'Construction', imgSrc: '/images/commercial7.jpg' },
+  { id: 8, title: 'Garage Center', subtitle: 'Construction', imgSrc: '/images/commercial8.jpg' },
 ];
 
 // Data for the Interiors projects section (used in the static grid)
 const interiorProjects = [
-  { id: 1, title: 'Potter Center', subtitle: 'Renovation', imgSrc: './src/assets/interior1.jpg' },
-  { id: 2, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: './src/assets/interior2.jpg' },
-  { id: 3, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: './src/assets/interior3.jpg' },
-  { id: 4, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: './src/assets/interior4.jpg' },
+  { id: 1, title: 'Potter Center', subtitle: 'Renovation', imgSrc: '/images/interior1.jpg' },
+  { id: 2, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: '/images/interior2.jpg' },
+  { id: 3, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: '/images/interior3.jpg' },
+  { id: 4, title: 'Lloyd Center', subtitle: 'Interior Design', imgSrc: '/images/interior4.jpg' },
 ];
 
 // Component for an individual project card in the static grid

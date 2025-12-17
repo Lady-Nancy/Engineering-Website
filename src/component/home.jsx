@@ -113,19 +113,19 @@ const home = () => {
         <div className="more">
            More About Us </div></Link>
     </div>
-    <img src="./src/assets/0539e10035c641d08c11faf834874571.jpg" alt="" />
+    <img src="/images/0539e10035c641d08c11faf834874571.jpg" alt="" />
 </div>
 
 <div className="years">
     <div className="two">
         <div className="three">
-            <img src="./src/assets/IMG-20251019-WA0107.jpg" alt="" />
+            <img src="/images/IMG-20251019-WA0107.jpg" alt="" />
             <h1>30+</h1>
             <p>years on the market</p>
         </div>
 
         <div className="six">
-            <img src="./src/assets/awards.jpg" alt="" />
+            <img src="/images/awards.jpg" alt="" />
             <h1>600+</h1>
             <p>sq ft built</p>
         </div>
@@ -136,7 +136,7 @@ const home = () => {
         </div>
 
         <div className="one">
-            <img src="./src/assets/IMG-20251019-WA0114.jpg" alt="" />
+            <img src="/images../assets/IMG-20251019-WA0114.jpg" alt="" />
             <h1><span>12</span></h1>
             <p>awards received</p>
         </div>
@@ -144,7 +144,7 @@ const home = () => {
 
     <div className="image">
         <div>
-            <img src="./src/assets/onee.jpg" alt="" />
+            <img src="/images/onee.jpg" alt="" />
         </div>
         <div className="sector">
             <h5><span>+</span> SECTORS</h5>
@@ -183,7 +183,7 @@ const home = () => {
 
     <div className="project1">
         <div className="pro1">
-            <img src="./src/assets/img1.jpg" alt="" />
+            <img src="/images/img1.jpg" alt="" />
             <div className="timeless">
                 <h5 className='h5'><span>#</span> RENOVATION</h5>
                 <h1>Timeless Gray & White Living Room</h1>
@@ -193,7 +193,7 @@ const home = () => {
         </div>
 
         <div className="pro2">
-            <img src="./src/assets/img2.jpg" alt="" />
+            <img src="/images/img2.jpg" alt="" />
             <div className="gorgeous">
                 <h5 className='h5'><span>#</span> REMODELLING</h5>
                 <h1>Gorgeous House Remodelling</h1>
@@ -205,7 +205,7 @@ const home = () => {
 
     <div className="project2">
         <div className="pro3">
-            <img src="./src/assets/img3.jpg" alt="" />
+            <img src="/images/img3.jpg" alt="" />
             <div className="amber">
                 <h5 className='h5'><span>#</span> REMODELLING</h5>
                 <h1>Amber House Remodelling</h1>
@@ -215,7 +215,7 @@ const home = () => {
         </div>
 
         <div className="pro4">
-            <img src="./src/assets/img4.jpg" alt="" />
+            <img src="/images/img4.jpg" alt="" />
             <div className="modern">
                 <h5 className='h5'><span>#</span>INTEROR DESIGN</h5>
                 <h1>Modern White Bathroom</h1>
@@ -245,12 +245,12 @@ const home = () => {
     </div>
 
     <div className="pics">
-        <img src="./src/assets/img5.jpg" className="img1" />
-        <img src="./src/assets/img6.jpg" className="img2" />
-        <img src="./src/assets/img7.jpg" className="img3" />
-        <img src="./src/assets/img8.jpg" className="im4" />
-        <img src="./src/assets/img9.jpg" className="img5" />
-        <img src="./src/assets/img10.jpg" className="img6" />
+        <img src="/images/img5.jpg" className="img1" />
+        <img src="/images/img6.jpg" className="img2" />
+        <img src="/images/img7.jpg" className="img3" />
+        <img src="/images/img8.jpg" className="im4" />
+        <img src="/images/img9.jpg" className="img5" />
+        <img src="/images/img10.jpg" className="img6" />
     </div>
 </section>
 
@@ -258,7 +258,7 @@ const home = () => {
       <div className="work-video">
         <video
           ref={videoRef}
-          src="./src/assets/VID-20251019-WA0124.mp4"
+          src="/images/VID-20251019-WA0124.mp4"
           muted
           loop
         />

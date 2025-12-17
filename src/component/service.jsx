@@ -4,42 +4,42 @@ import "./service.css";
 export default function Services() {
   const data = [
     {
-      img: "./src/assets/s1.jpg",
+      img: "/images/s1.jpg",
       title: "Preconstruction",
       text: "We start with accurate project planning of your dream construction design.",
     },
     {
-      img: "./src/assets/s2.jpg",
+      img: "/images/s2.jpg",
       title: "Construction",
       text: "Our mission is to make your construction process as smooth as possible.",
     },
     {
-      img: "./src/assets/s3.jpg",
+      img: "/images/s3.jpg",
       title: "Design-Build",
       text: "We have experience and industry network to deal with comprehensive project demands.",
     },
     {
-      img: "./src/assets/s4.jpg",
+      img: "/images/s4.jpg",
       title: "General Contracting",
       text: "We make responsible decisions every step of the way to achieve quality construction.",
     },
     {
-      img: "./src/assets/s5.jpg",
+      img: "/images/s5.jpg",
       title: "Interior Design",
       text: "Need a unique interior design? We can turn any idea into reality.",
     },
     {
-      img: "./src/assets/s6.jpg",
+      img: "/images/s6.jpg",
       title: "Construction Management",
       text: "From meetings with architects and engineers to project completion, we meet all goals.",
     },
     {
-      img: "./src/assets/s7.jpg",
+      img: "/imagess/s7.jpg",
       title: "Property Development",
       text: "We work with well-known funders, builders, and owners to optimize the whole life-cycle.",
     },
     {
-      img: "./src/assets/s8.jpg",
+      img: "/images/s8.jpg",
       title: "Project Estimation",
       text: "Our huge database of projects allows us to create budget estimates with accuracy.",
     },

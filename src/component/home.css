@@ -13,7 +13,7 @@
 
 .con {
    height: 145vh;
-    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/IMG-20251019-WA0107.jpg);
+    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(/images/IMG-20251019-WA0107.jpg);
     background-size: cover;
     color: white;
     animation: fadeIn 2s ease-in-out;
@@ -818,7 +818,7 @@ h1 span {
 
 .contact-us {
     height: 200vh;
-    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(./src/assets/one.jpg);
+    background-image: linear-gradient(rgba(3, 3, 3, 0.8), rgba(3, 3, 3, 0.8)), url(/images/one.jpg);
     background-position: center;
     color: white;
     background-size: cover;

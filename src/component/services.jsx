@@ -30,7 +30,7 @@ const handlePause = () => {
     <div>
         <div className="image">
         <div>
-            <img src="./src/assets/onee.jpg" alt="" />
+            <img src="/images/onee.jpg" alt="" />
         </div>
         <div className="sector">
             <h5><span>+</span> SECTORS</h5>
@@ -55,7 +55,7 @@ const handlePause = () => {
       <div className="work-video">
         <video
           ref={videoRef}
-          src="./src/assets/VID-20251019-WA0124.mp4"
+          src="/images/VID-20251019-WA0124.mp4"
           muted
           loop
            className={played ? "show" : ""}

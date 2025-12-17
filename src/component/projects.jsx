@@ -12,7 +12,7 @@ const Projects = () => {
         </div>
 
         <div class="project1">
-           <div class="pro1"><img src="./src/assets/img1.jpg" alt="" />
+           <div class="pro1"><img src="/images/img1.jpg" alt="" />
            <div class="timeless"><h5 className='h5'><span>#</span> RENOVATION</h5>
             <h1>Timeless Gray & White Living Room</h1> 
             <h4>September, 20, 2024</h4>
@@ -20,7 +20,7 @@ const Projects = () => {
         </div> 
         
         <div class="pro2">
-            <img src="./src/assets/img2.jpg" alt="" />
+            <img src="/images/img2.jpg" alt="" />
            <div class="gorgeous"> <h5 className='h5'><span>#</span> REMODELLING</h5>
             <h1>Gorgeous House Remodelling </h1> 
             <h4>September, 20, 2024</h4>
@@ -30,7 +30,7 @@ const Projects = () => {
 
         <div class="project2">
         <div class="pro3">
-            <img src="./src/assets/img3.jpg" alt="" />
+            <img src="/images/img3.jpg" alt="" />
             <div class="amber"><h5 className='h5'><span>#</span> REMODELLING</h5>
             <h1>Amber House Remodelling </h1> 
             <h4>September, 20, 2024</h4>
@@ -38,7 +38,7 @@ const Projects = () => {
         </div>
 
         <div class="pro4">
-            <img src="./src/assets/img4.jpg" alt="" />
+            <img src="/images/img4.jpg" alt="" />
             <div class="modern"><h5 className='h5'><span>#</span>INTEROR DESIGN</h5>
             <h1>Modern White Bathroom</h1> 
             <h4>September, 20, 2024</h4>
@@ -66,12 +66,12 @@ const Projects = () => {
 
       
          <div class="pics">
-            <img src="./src/assets/img5.jpg" className="img1" />
-            <img src="./src/assets/img6.jpg" className="img2" />
-            <img src="./src/assets/img7.jpg" className="img3" />
-            <img src="./src/assets/img8.jpg" className="img4" />
-            <img src="./src/assets/img9.jpg" className="img5" />
-            <img src="./src/assets/img10.jpg" className="img6" />
+            <img src="/images/img5.jpg" className="img1" />
+            <img src="/images/img6.jpg" className="img2" />
+            <img src="/images/img7.jpg" className="img3" />
+            <img src="/images/img8.jpg" className="img4" />
+            <img src="/imagesimg9.jpg" className="img5" />
+            <img src="/images/img10.jpg" className="img6" />
          </div>
     </section>
 
