@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import './Project.css';
+import './project.css';
 import Futa from './futa'
 
 // --- Static Project Grid Components (From Previous Request) ---
