@@ -70,7 +70,7 @@ const Projects = () => {
             <img src="/images/img6.jpg" className="img2" />
             <img src="/images/img7.jpg" className="img3" />
             <img src="/images/img8.jpg" className="img4" />
-            <img src="/imagesimg9.jpg" className="img5" />
+            <img src="/images/img9.jpg" className="img5" />
             <img src="/images/img10.jpg" className="img6" />
          </div>
     </section>

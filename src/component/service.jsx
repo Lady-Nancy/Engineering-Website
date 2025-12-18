@@ -59,7 +59,7 @@ export default function Services() {
             <img src={item.img} alt={item.title} className="service-img" />
             <h3>{item.title}</h3>
             <p>{item.text}</p>
-            <a href="#" className="learn-more">Learn More <span>+</span></a>
+            <a href="/services" className="learn-more">Learn More <span>+</span></a>
           </div>
         ))}
       </div>
