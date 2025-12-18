@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import Futa from './futa';
+import { Link } from 'react-router-dom'
 
 const Contacts = () => {
   const formRef = useRef();
@@ -28,6 +29,15 @@ const Contacts = () => {
 
   return (
     <div>
+
+         <div className="top">
+             <Link to="/home" className='link'>Home</Link>
+             <Link to="/about" className='link'>About Us</Link>
+             <Link to="/services" className='link'>Services</Link>
+             <Link to="/projects" className='link'>Projects</Link>
+             <Link to="/contacts" className='link'>Contact Us</Link>
+           </div>
+
       <section className="contact-us">
         <div className="contact-us1">
           <div className="head">

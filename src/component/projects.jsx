@@ -1,9 +1,19 @@
 import React from 'react'
 import './projects.css'
+import { Link } from 'react-router-dom'
 
 const Projects = () => {
   return (
     <div>
+
+          <div className="tops">
+             <Link to="/home" className='link'>Home</Link>
+             <Link to="/about" className='link'>About Us</Link>
+             <Link to="/services" className='link'>Services</Link>
+             <Link to="/projects" className='link'>Projects</Link>
+             <Link to="/contacts" className='link'>Contact Us</Link>
+           </div>
+        
        <section class="projects">
         <div class="latest">
            <h5><span>+</span> LATEST WORKS</h5>

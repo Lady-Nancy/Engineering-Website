@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import "./home.css";
 import Futa from './futa'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   const videoRef = useRef(null);
@@ -28,6 +29,15 @@ const handlePause = () => {
 
   return (
     <div>
+
+        <div className="top">
+             <Link to="/home" className='link'>Home</Link>
+             <Link to="/about" className='link'>About Us</Link>
+             <Link to="/services" className='link'>Services</Link>
+             <Link to="/projects" className='link'>Projects</Link>
+             <Link to="/contacts" className='link'>Contact Us</Link>
+           </div>
+
         <div className="image">
         <div>
             <img src="/images/onee.jpg" alt="" />
