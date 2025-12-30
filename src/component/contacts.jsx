@@ -193,8 +193,8 @@ const Contacts = () => {
               className="textarea"
               name="message"
               placeholder="Message"
-              required
-            ></textarea>
+              required>
+           </textarea>
 
             <button type="submit" className="button">
               Send A Request
