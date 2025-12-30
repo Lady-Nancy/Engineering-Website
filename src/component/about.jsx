@@ -9,9 +9,9 @@ const About = () => {
    const [menuOpen, setMenuOpen] = useState(false);
   return (
      <div>
-        <div className="container1">
+        <div className="about1">
              {/* Top email bar */}
-             <div className="email">
+             <div className="email1">
                <p>+ (234) 816 079 1212</p>
                <p>cplexconstructioncompanyltd@email.com</p>
              </div>
@@ -19,7 +19,7 @@ const About = () => {
              {/* Desktop Nav */}
              <nav className="home">
                <div className="okay">
-                 <div>
+                 <div className="oh">
                    <img src="/images/IMG-20251019-WA0023.jpg" alt="" />
                    C - PLEX
                  </div>
@@ -79,7 +79,7 @@ const About = () => {
                </div>
            
                 <div className="okay">
-                 <div>
+                 <div className='oh'>
                    <img src="/images/IMG-20251019-WA0023.jpg" alt="" />
                    C - PLEX
                  </div>

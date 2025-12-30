@@ -5,7 +5,6 @@ import Hero from './hero';
 import Futa from './futa'
 import { Link } from 'react-router-dom';
 
-import "./home.css"
 
 const home = () => {
     const [menuOpen, setMenuOpen] = useState(false);
